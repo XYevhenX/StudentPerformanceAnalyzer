@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+	<Student FullName="Зюзін Євген" Faculty="ФКНК" Department="Інформаційних систем" Course="2" Group="К26">
+		<Disciplines>
+			<Discipline Name="Об'єктно-орієнтоване програмування" Grade="98" Status="Passed" />
+			<Discipline Name="Алгоритми та структури даних" Grade="95" Status="Passed" />
+			<Discipline Name="Бази даних" Grade="92" Status="Passed" />
+		</Disciplines>
+	</Student>
+
+	<Student FullName="Шевченко Олександр" Faculty="ФКНК" Course="2" Group="К16">
+		<Disciplines>
+			<Discipline Name="Об'єктно-орієнтоване програмування" Grade="75" Status="Passed" />
+			<Discipline Name="Лінійна алгебра" Grade="60" Status="Retake" />
+		</Disciplines>
+	</Student>
+
+	<Student FullName="Коваленко Марія" Faculty="Економічний" Department="Економічної кібернетики" Course="3" Group="ЕК-31">
+		<Disciplines>
+			<Discipline Name="Макроекономіка" Grade="88" Status="Passed" />
+			<Discipline Name="Фінанси" Grade="90" Status="Passed" />
+		</Disciplines>
+	</Student>
+</Students>
