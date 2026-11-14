@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Students>
-	<Student FullName="Зюзін Євген" Faculty="ФКНК" Department="Інформаційних систем" Course="2" Group="К26">
+	<Student FullName="Зюзін Євген" Faculty="ФКНК" Department="Теоретичної кібернетики" Course="2" Group="К26">
 		<Disciplines>
 			<Discipline Name="Об'єктно-орієнтоване програмування" Grade="98" Status="Passed" />
 			<Discipline Name="Алгоритми та структури даних" Grade="95" Status="Passed" />
@@ -8,7 +8,7 @@
 		</Disciplines>
 	</Student>
 
-	<Student FullName="Шевченко Олександр" Faculty="ФКНК" Course="2" Group="К16">
+	<Student FullName="Абобус Олександр" Faculty="ФКНК" Course="2" Group="К26">
 		<Disciplines>
 			<Discipline Name="Об'єктно-орієнтоване програмування" Grade="75" Status="Passed" />
 			<Discipline Name="Лінійна алгебра" Grade="60" Status="Retake" />
