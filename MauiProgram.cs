@@ -1,4 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Hosting;
+using StudentPerformanceAnalyzer.Services;
+using StudentPerformanceAnalyzer.Strategies;
 
 namespace StudentPerformanceAnalyzer
 {
@@ -16,8 +21,14 @@ namespace StudentPerformanceAnalyzer
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddSingleton<IXmlDataService, XmlDataService>();
+
+            builder.Services.AddTransient<SaxSearchStrategy>();
+            builder.Services.AddTransient<DomSearchStrategy>();
+            builder.Services.AddTransient<LinqSearchStrategy>();
 
             return builder.Build();
         }
