@@ -4,6 +4,7 @@ using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
 using StudentPerformanceAnalyzer.Services;
 using StudentPerformanceAnalyzer.Strategies;
+using StudentPerformanceAnalyzer.ViewModels;
 
 namespace StudentPerformanceAnalyzer
 {
@@ -29,6 +30,9 @@ namespace StudentPerformanceAnalyzer
             builder.Services.AddTransient<SaxSearchStrategy>();
             builder.Services.AddTransient<DomSearchStrategy>();
             builder.Services.AddTransient<LinqSearchStrategy>();
+
+            builder.Services.AddTransient<MainViewModel>();
+            builder.Services.AddTransient<MainPage>();
 
             return builder.Build();
         }
